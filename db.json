@@ -1,0 +1,213 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "John Doe",
+      "email": "john@example.com",
+      "address": {
+        "street": "123 Main St",
+        "city": "New York",
+        "zipcode": "10001"
+      },
+      "phone": "555-0101",
+      "website": "johndoe.com",
+      "company": {
+        "name": "Doe Inc",
+        "catchPhrase": "Synergistic solutions"
+      }
+    },
+    {
+      "id": 2,
+      "name": "Jane Smith",
+      "email": "jane@example.com",
+      "address": {
+        "street": "456 Oak Ave",
+        "city": "Los Angeles",
+        "zipcode": "90001"
+      },
+      "phone": "555-0202",
+      "website": "janesmith.dev",
+      "company": {
+        "name": "Smith & Co",
+        "catchPhrase": "User-centric interfaces"
+      }
+    },
+    {
+      "id": 3,
+      "name": "Bob Johnson",
+      "email": "bob@example.com",
+      "address": {
+        "street": "789 Pine Rd",
+        "city": "Chicago",
+        "zipcode": "60601"
+      },
+      "phone": "555-0303",
+      "website": "bobjohnson.io",
+      "company": {
+        "name": "Johnson LLC",
+        "catchPhrase": "Robust architectures"
+      }
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "title": "Wireless Headphones",
+      "price": 99.99,
+      "description": "Noise-cancelling wireless headphones with 30hr battery",
+      "category": "electronics",
+      "stock": 45,
+      "rating": 4.7
+    },
+    {
+      "id": 2,
+      "title": "Smart Watch",
+      "price": 199.99,
+      "description": "Fitness tracking smartwatch with heart rate monitor",
+      "category": "electronics",
+      "stock": 32,
+      "rating": 4.5
+    },
+    {
+      "id": 3,
+      "title": "Coffee Maker",
+      "price": 49.99,
+      "description": "Programmable 12-cup coffee maker",
+      "category": "home",
+      "stock": 18,
+      "rating": 4.3
+    },
+    {
+      "id": 4,
+      "title": "Backpack",
+      "price": 39.99,
+      "description": "Water-resistant backpack with laptop compartment",
+      "category": "accessories",
+      "stock": 67,
+      "rating": 4.8
+    }
+  ],
+  "orders": [
+    {
+      "id": 1,
+      "userId": 1,
+      "products": [
+        { "productId": 1, "quantity": 1 },
+        { "productId": 4, "quantity": 2 }
+      ],
+      "total": 179.97,
+      "date": "2023-05-15"
+    },
+    {
+      "id": 2,
+      "userId": 2,
+      "products": [
+        { "productId": 2, "quantity": 1 }
+      ],
+      "total": 199.99,
+      "date": "2023-05-16"
+    },
+    {
+      "id": 3,
+      "userId": 3,
+      "products": [
+        { "productId": 3, "quantity": 1 },
+        { "productId": 1, "quantity": 1 }
+      ],
+      "total": 149.98,
+      "date": "2023-05-17"
+    }
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "userId": 1,
+      "title": "Getting Started with React",
+      "body": "React is a JavaScript library for building user interfaces...",
+      "tags": ["react", "javascript", "frontend"],
+      "date": "2023-01-10",
+      "views": 1245,
+      "likes": 56
+    },
+    {
+      "id": 2,
+      "userId": 2,
+      "title": "Advanced CSS Techniques",
+      "body": "Modern CSS provides powerful layout tools like Flexbox and Grid...",
+      "tags": ["css", "webdesign", "frontend"],
+      "date": "2023-02-15",
+      "views": 892,
+      "likes": 42
+    },
+    {
+      "id": 3,
+      "userId": 3,
+      "title": "Node.js Performance Optimization",
+      "body": "Here are some tips to improve your Node.js application performance...",
+      "tags": ["nodejs", "backend", "performance"],
+      "date": "2023-03-20",
+      "views": 1567,
+      "likes": 78
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "postId": 1,
+      "userId": 2,
+      "body": "Great introduction to React!",
+      "date": "2023-01-11"
+    },
+    {
+      "id": 2,
+      "postId": 1,
+      "userId": 3,
+      "body": "Very helpful for beginners.",
+      "date": "2023-01-12"
+    },
+    {
+      "id": 3,
+      "postId": 2,
+      "userId": 1,
+      "body": "Could you expand on the Grid examples?",
+      "date": "2023-02-16"
+    },
+    {
+      "id": 4,
+      "postId": 3,
+      "userId": 2,
+      "body": "These optimizations saved us 30% CPU usage!",
+      "date": "2023-03-22"
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "electronics",
+      "description": "Electronic devices and accessories"
+    },
+    {
+      "id": 2,
+      "name": "home",
+      "description": "Home and kitchen products"
+    },
+    {
+      "id": 3,
+      "name": "accessories",
+      "description": "Fashion accessories and bags"
+    }
+  ],
+  "settings": {
+    "siteName": "Mock API Server",
+    "adminEmail": "admin@example.com",
+    "pagination": {
+      "defaultPageSize": 10,
+      "maxPageSize": 100
+    },
+    "features": {
+      "search": true,
+      "filtering": true,
+      "sorting": true
+    }
+  }
+}

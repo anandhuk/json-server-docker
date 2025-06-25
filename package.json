@@ -1,0 +1,27 @@
+{
+  "name": "json-server-docker",
+  "version": "1.0.0",
+  "description": "A Dockerized JSON Server for mock REST APIs",
+  "main": "server.js",
+  "scripts": {
+    "start": "json-server --watch db.json --port 3000",
+    "start:delay": "json-server --watch db.json --port 3000 --delay 1500",
+    "start:static": "json-server --static db.json --port 3000",
+    "start:routes": "json-server --watch db.json --routes routes.json --port 3000",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "json-server",
+    "docker",
+    "mock-api",
+    "rest-api"
+  ],
+  "author": "Your Name <your.email@example.com>",
+  "license": "MIT",
+  "dependencies": {
+    "json-server": "^0.17.4"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  }
+}
